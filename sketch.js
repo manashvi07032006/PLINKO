@@ -14,7 +14,6 @@ function setup(){
   engine = Engine.create();
   world = engine.world;
   
-
   ground = new Ground(240, 780, 800, 20);
   side1 = new Ground(240, 0, 800, 20);
   side2 = new Ground(480, 400, 20, 800);
@@ -36,9 +35,7 @@ function setup(){
       plinkos.push(new Plinko(i, y, 10, 300));
     }
   }
-
   
-
 }
 
 function draw(){
@@ -59,7 +56,6 @@ function draw(){
     particles[j].display();
   }
   
-
   ground.display();
   stroke("red");
   fill("red");
